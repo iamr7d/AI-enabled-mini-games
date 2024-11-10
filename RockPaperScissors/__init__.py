@@ -1,0 +1,1 @@
+from .rpsdata import RockPaperScissors

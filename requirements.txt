@@ -1,0 +1,5 @@
+pygame>=2.5.0
+numpy>=1.24.0  # For AI calculations and game physics
+scikit-learn>=1.3.0  # For AI pattern recognition in Rock Paper Scissors
+opencv-python>=4.8.0  # For image processing in games
+pillow>=10.0.0  # For additional image handling

@@ -5,8 +5,9 @@ A collection of classic games enhanced with AI capabilities, built using Python 
 ## 🎮 Available Games
 
 1. **Ball Game**
-   - An interactive ball physics game with AI-controlled elements
-   - Test your reflexes and strategy against AI-powered obstacles
+   - An interactive ball physics game with AI hand tracking
+   - Control the paddle using hand gestures captured by your webcam
+   - Features MediaPipe hand detection for intuitive controls
 
 2. **Rock Paper Scissors**
    - Classic Rock Paper Scissors game against an AI opponent
@@ -24,7 +25,8 @@ A collection of classic games enhanced with AI capabilities, built using Python 
 
 ### Prerequisites
 - Python 3.7 or higher
-- Pygame library
+- Required Python packages (see requirements.txt)
+- Webcam (required for Ball Game hand tracking)
 
 ### Installation
 
@@ -35,7 +37,7 @@ git clone https://github.com/iamr7d/AI-enabled-mini-games.git
 
 2. Install required dependencies:
 ```bash
-pip install pygame
+pip install -r requirements.txt
 ```
 
 3. Run the main menu:
@@ -48,7 +50,7 @@ python main_menu.py
 1. Launch the game by running `main_menu.py`
 2. Use your mouse to select any of the available games from the menu
 3. Each game has its own controls and objectives:
-   - **Ball Game**: Use mouse/keyboard to control the ball
+   - **Ball Game**: Use hand gestures in front of your webcam to control the paddle
    - **Rock Paper Scissors**: Click to make your selection
    - **Snake & Apple**: Arrow keys to control the snake
    - **AI Cricket**: Follow in-game instructions for controls
@@ -56,6 +58,7 @@ python main_menu.py
 ## 🤖 AI Features
 
 Each game incorporates unique AI elements:
+- Hand gesture recognition using MediaPipe
 - Adaptive difficulty levels
 - Pattern recognition
 - Intelligent opponent behavior
@@ -66,7 +69,8 @@ Each game incorporates unique AI elements:
 ```
 AI-enabled-mini-games/
 ├── main_menu.py          # Main game launcher
-├── Ball/                 # Ball game files
+├── requirements.txt      # Python dependencies
+├── Ball/                 # Ball game files with hand tracking
 ├── RockPaperScissors/   # RPS game implementation
 ├── snak and apple/      # Snake game files
 └── AI Cricket/          # Cricket game implementation
